@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;900&display=swap');
+
+$ff-ro: 'Roboto', serif;
+$ff-os: 'Oswald', serif;
+
+$fw-n: 400;
+$fw-b: 900;
+
+@mixin headings($fs, $ls: .1em, $color: $white, $tt: capitalize, $lh: 1) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  text-transform: $tt;
+  line-height: $lh;
+  font-family: $ff-os;
+}
