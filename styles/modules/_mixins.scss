@@ -1,0 +1,11 @@
+@mixin container($width: 90%, $max-width: 50em) {
+  width: $width;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+@mixin mq($width: 50em) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

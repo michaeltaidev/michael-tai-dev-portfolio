@@ -1,23 +1,30 @@
 body {
-  color: $white;
+  color: $dark-gray;
   font-family: $ff-ro;
   line-height: 1.6;
-  background: $dark-gray;
+  background: $white;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
 }
 
 h1 {
   @include headings($fs: 2rem, $lh: 1.2);
-
-  span {
-    @include headings($fs: 5.5rem, $color: $green);
-    display: block;
-  }
 }
 
 h2 {
-  @include headings($fs: 4rem, $color: $green)
+  @include headings($fs: 5.5rem, $color: $green)
+
+  @include mq {
+    font-size: 6rem;
+  }
 }
 
 h3 {
   @include headings($fs: 2rem)
+
+  @include mq {
+    font-size: 2.25rem;
+  }
 }

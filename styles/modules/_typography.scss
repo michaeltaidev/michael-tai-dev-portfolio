@@ -6,11 +6,12 @@ $ff-os: 'Oswald', serif;
 $fw-n: 400;
 $fw-b: 900;
 
-@mixin headings($fs, $ls: .1em, $color: $white, $tt: capitalize, $lh: 1) {
+@mixin headings($fs, $ls: .1em, $color: $dark-gray, $tt: capitalize, $lh: 1.2, $mt: 0) {
   font-size: $fs;
   letter-spacing: $ls;
   color: $color;
   text-transform: $tt;
   line-height: $lh;
   font-family: $ff-os;
+  margin-top: $mt;
 }

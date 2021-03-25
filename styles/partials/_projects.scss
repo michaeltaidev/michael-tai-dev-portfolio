@@ -1,0 +1,112 @@
+.projects {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.project-items {
+  // Fallback for browsers that are incompatible with CSS Grid
+  display: flex;
+  flex-wrap: wrap;
+  @include container($max-width: 75em);
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+
+  // Fallback for browsers that are incompatible with CSS Grid
+  flex: 1 1 20rem;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    background: rgba($green, .7);
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: top ease-in-out 250ms;
+  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    top: 0;
+  }
+}
+
+.project-title {
+  color: $white;
+  font-size: 2.5rem;
+  margin-bottom: auto;
+}
+
+.project-desc {
+  // For smaller screen sizes, only show description for the featured project.
+  display: none;
+
+  @include mq ($width: 1300px) {
+    display: block;
+  }
+
+  .featured & {
+    display: block;
+  }
+}
+
+.project-info {
+  position: relative;
+  color: $white;
+  font-weight: $fw-b;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 2.5px solid $white;
+  align-self: start;
+
+  &::after {
+    content: '\00bb';
+    position: absolute;
+    right: -12px;
+    transition: .3s;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      right: -17px;
+    }
+  }
+}
+
+@supports (display: grid) {
+  .project-items {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+
+    @include mq {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .project-item.featured {
+    // Force featured project to appear at the top
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .featured {
+    .project-title {
+      font-size: 4rem;
+    }
+  }
+}
