@@ -1,15 +1,21 @@
 .contact {
   @include container;
   padding: 5em 0;
+  text-align: center;
 
   h2 {
-    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .form-subtitle {
+    margin-top: 1em;
   }
 }
 
 form{
   display: flex;
   flex-direction: column;
+  text-align: left;
 
   @supports (display: grid) {
     @include mq {

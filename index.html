@@ -5,15 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Michael Tai</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-  <div class="hero">
-    <h1>Hi, I'm <span>Michael Tai</span> a Full-Stack Developer</h1>
-  </div>
+  <header>
+    <div class="menu-toggler">
+      <div class="bar half top"></div>
+      <div class="bar"></div>
+      <div class="bar half bottom"></div>
+    </div>
+    <nav class="top-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        <li>
+          <a href="#socials" class="nav-link">Socials</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm <span>Michael Tai</span> a Full-Stack Developer</h1>
+    </div>
+  </header>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-left">
       <img src="img/about-03.png" alt="">
     </div>
@@ -27,7 +57,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-items">
       <!-- Project Item 1 -->
@@ -78,7 +108,7 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section id="skills" class="skills">
     <h2>Skills</h2>
     <h3 class="skills-subtitle">Front-End</h3>
     <div class="skills-text">
@@ -94,8 +124,11 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
+    <p class="contact-info-email">Email &middot <b>michaeltaidev@gmail.com</b></p>
+    <p class="contact-info-phone">Phone &middot <b>1(408)786-4287</b></p>
+    <h3 class="form-subtitle">Send a Message</h3>
     <form action="">
       <label class="name">Name:
         <input type="text" id="name" placeholder="John Doe">
@@ -110,7 +143,7 @@
     </form>
   </section>
 
-  <section class="socials">
+  <section id="socials" class="socials">
     <h2>Socials</h2>
     <div class="social-icons">
       <img class="social-icon" src="img/twitter.svg" alt="twitter icon">
@@ -129,5 +162,8 @@
     </p>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

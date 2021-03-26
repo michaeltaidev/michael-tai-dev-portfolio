@@ -298,6 +298,11 @@ template {
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   color: #2e2e2e;
   font-family: "Roboto", serif;
@@ -351,6 +356,153 @@ h3 {
   h3 {
     font-size: 2.25rem;
   }
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.top-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  background-color: #e0e0e0;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .nav-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+li {
+  margin: 1rem 0;
+}
+
+@media (min-width: 1200px) {
+  li {
+    margin: 0 1.5rem;
+  }
+}
+
+.nav-link {
+  font-family: "Oswald", serif, sans-serif;
+  font-size: 3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #3ad45b;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3.25rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  -webkit-transition: all 550ms ease-out;
+  transition: all 550ms ease-out;
+}
+
+@media (min-width: 50em) {
+  .menu-toggler {
+    top: 3rem;
+    right: 3rem;
+    width: 3.5rem;
+    height: 2.35rem;
+  }
+}
+
+.menu-toggler.open {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.bar {
+  background: #3ad45b;
+  width: 100%;
+  height: 4px;
+  border-radius: .8rem;
+}
+
+.bar.half {
+  background: #3ad45b;
+}
+
+.bar.top {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 550ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: all 550ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.top {
+  width: 50%;
+  -webkit-transform: rotate(-450deg) translateX(0.8rem);
+          transform: rotate(-450deg) translateX(0.8rem);
+}
+
+.bar.bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 550ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: all 550ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.bottom {
+  width: 50%;
+  -webkit-transform: rotate(-450deg) translateX(-0.8rem);
+          transform: rotate(-450deg) translateX(-0.8rem);
 }
 
 .hero {
@@ -467,6 +619,10 @@ h3 {
   background: #e0e0e0;
   text-align: center;
   padding: 5em 0;
+}
+
+.skills h2 {
+  margin-bottom: 0.5em;
 }
 
 .projects {
@@ -602,10 +758,15 @@ h3 {
   margin: 0 auto;
   max-width: 50em;
   padding: 5em 0;
+  text-align: center;
 }
 
 .contact h2 {
-  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.contact .form-subtitle {
+  margin-top: 1em;
 }
 
 form {
@@ -616,6 +777,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
 }
 
 @supports (display: grid) {
@@ -667,7 +829,7 @@ textarea {
   padding: .5em;
   width: 100%;
   background: #f2f2f2;
-  border: 1px solid #5f5f5f;
+  border: 1px solid #979797;
   font-size: 1.2rem;
 }
 
@@ -694,7 +856,7 @@ textarea {
 }
 
 .socials h2 {
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
 }
 
 .social-icons {
