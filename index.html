@@ -19,7 +19,7 @@
     <nav class="top-nav">
       <ul class="nav-list">
         <li>
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Home</a>
         </li>
         <li>
           <a href="#about" class="nav-link">About</a>
@@ -60,6 +60,7 @@
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-items">
+
       <!-- Project Item 1 -->
       <figure class="project-item featured">
         <img src="img/portfolio-01.jpg" alt="">
@@ -68,7 +69,36 @@
           <p class="project-desc">Description of Project 01</p>
           <a href="#" class="project-info">More Info</a>
         </figcaption>
+        <!-- Project 1 modal -->
+        <div class="project-modal">
+          <button class="modal-close" >
+            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+              <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                 35.8,16.5 37,17.7 	" />
+              </g>
+            </svg>
+          </button>
+          <div class="project-header header-one">
+            <div class="project-title-box">
+              <h2 class="project-title">Project 01</h2>
+              <p class="project-subtitle">Project 01 subtitle</p>
+            </div> <!-- /project-header -->
+          </div>
+          <div class="project-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti 
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!</p>
+            <img class="project-pull-left" src="img/portfolio-01.jpg" alt="">
+            <img class="project-pull-right" src="img/portfolio-01.jpg" alt="">
+          </div>
+        </div>
+        <!-- /modal -->
       </figure>
+
       <!-- Project Item 2 -->
       <figure class="project-item">
         <img src="img/portfolio-02.jpg" alt="">
@@ -77,6 +107,37 @@
           <p class="project-desc">Description of Project 02</p>
           <a href="#" class="project-info">More Info</a>
         </figcaption>
+        <!-- Project 2 modal -->
+        <div class="project-modal">
+          <button class="modal-close">
+            <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+              <g transform="translate(-15 -15)">
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                         35.8,16.5 37,17.7 	" />
+              </g>
+            </svg>
+          </button>
+          <div class="project-header header-two">
+            <div class="project-title-box">
+              <h2 class="project-title">Project 02</h2>
+              <p class="project-subtitle">Project 02 subtitle</p>
+            </div> <!-- /project-header -->
+          </div>
+          <div class="project-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
+              explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!
+            </p>
+            <img class="project-pull-left" src="img/portfolio-02.jpg" alt="">
+            <img class="project-pull-right" src="img/portfolio-02.jpg" alt="">
+          </div>
+        </div>
+        <!-- /modal -->
       </figure>
       <!-- Project Item 3 -->
       <figure class="project-item">
@@ -126,8 +187,8 @@
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p class="contact-info-email">Email &middot <b>michaeltaidev@gmail.com</b></p>
-    <p class="contact-info-phone">Phone &middot <b>1(408)786-4287</b></p>
+    <p class="contact-info-email"><i class="fas fa-envelope"></i> &middot contact@michaeltai.dev</p>
+    <p class="contact-info-phone"><i class="fas fa-phone"></i> &middot 1 (408) 786-4287</p>
     <h3 class="form-subtitle">Send a Message</h3>
     <form action="">
       <label class="name">Name:
@@ -163,7 +224,8 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/a6fdfc5739.js" crossorigin="anonymous"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

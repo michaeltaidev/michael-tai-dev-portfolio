@@ -3,6 +3,23 @@
 }
 
 body {
+  width:100vw;
+  overflow-x:hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+body {
   color: $dark-gray;
   font-family: $ff-ro;
   line-height: 1.6;

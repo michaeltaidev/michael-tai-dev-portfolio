@@ -1,6 +1,6 @@
 .contact {
   @include container;
-  padding: 5em 0;
+  padding: 3em 0 4em 0;
   text-align: center;
 
   h2 {
@@ -8,7 +8,9 @@
   }
 
   .form-subtitle {
-    margin-top: 1em;
+    margin-top: 1.25em;
+    margin-bottom: 0;
+    text-transform: none;
   }
 }
 

@@ -304,6 +304,24 @@ template {
 }
 
 body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+body {
   color: #2e2e2e;
   font-family: "Roboto", serif;
   line-height: 1.6;
@@ -373,6 +391,13 @@ header {
   border-bottom-left-radius: 100%;
   -webkit-transition: all 650ms cubic-bezier(1, 0, 0, 1);
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  visibility: hidden;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+  visibility: visible;
 }
 
 .nav-list {
@@ -423,11 +448,6 @@ li {
 
 .nav-link:hover, .nav-link:focus {
   color: #3ad45b;
-}
-
-.top-nav.open {
-  top: 0;
-  border-radius: initial;
 }
 
 .menu-toggler {
@@ -618,7 +638,7 @@ li {
 .skills {
   background: #e0e0e0;
   text-align: center;
-  padding: 5em 0;
+  padding: 3em 0 4em 0;
 }
 
 .skills h2 {
@@ -627,7 +647,11 @@ li {
 
 .projects {
   text-align: center;
-  padding: 5em 0;
+  padding: 3em 0 5em 0;
+}
+
+.projects h2 {
+  margin-bottom: 0.3em;
 }
 
 .project-items {
@@ -753,11 +777,146 @@ li {
   }
 }
 
+.project-modal::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.project-modal::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-modal::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+.project-modal {
+  position: fixed;
+  z-index: 10;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none;
+}
+
+.project-modal.open {
+  display: block;
+}
+
+.modal-close {
+  background: white;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 4px 0 0;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.project-header {
+  text-align: left;
+  padding: 5em 0;
+  margin-bottom: 3em;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-one {
+  background-image: url(../img/portfolio-01.jpg);
+}
+
+.header-two {
+  background-image: url(../img/portfolio-02.jpg);
+}
+
+.project-title-box {
+  background: rgba(58, 212, 91, 0.75);
+  padding: 3em;
+  color: #f3f3f3;
+  width: 70%;
+}
+
+.project-title-box .project-title {
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.project-title-box .project-title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin-top: .5em;
+  background: #f3f3f3;
+  width: 100%;
+}
+
+.project-subtitle {
+  font-size: 1.25rem;
+}
+
+.project-content {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.project-content img {
+  padding-top: 2em;
+}
+
+@-webkit-keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modalFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes modalFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .contact {
   width: 90%;
   margin: 0 auto;
   max-width: 50em;
-  padding: 5em 0;
+  padding: 3em 0 4em 0;
   text-align: center;
 }
 
@@ -766,7 +925,9 @@ li {
 }
 
 .contact .form-subtitle {
-  margin-top: 1em;
+  margin-top: 1.25em;
+  margin-bottom: 0;
+  text-transform: none;
 }
 
 form {
@@ -852,7 +1013,7 @@ textarea {
 .socials {
   background: #e0e0e0;
   text-align: center;
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 .socials h2 {

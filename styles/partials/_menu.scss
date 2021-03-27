@@ -12,6 +12,13 @@ header {
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  visibility: hidden;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+  visibility: visible;
 }
 
 .nav-list {
@@ -47,11 +54,6 @@ li {
   &:focus{
     color: $green;
   }
-}
-
-.top-nav.open {
-  top: 0;
-  border-radius: initial;
 }
 
 .menu-toggler {
