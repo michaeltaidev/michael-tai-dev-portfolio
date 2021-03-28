@@ -1,9 +1,25 @@
 .skills {
   background: $light-gray;
+  padding: 3em 0 2em 0;
   text-align: center;
-  padding: 3em 0 4em 0;
 
   h2 {
     margin-bottom: 0.5em;
   }
+}
+
+.my-skills {
+  @include container($max-width: 70em);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include mq ($width: 1300px) {
+    flex-direction: row;
+  }
+}
+
+.skill {
+  flex: 1 1 0px;
+  margin: 0 2.5em 2.5em;
 }

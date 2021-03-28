@@ -338,7 +338,7 @@ h1 {
   font-size: 2rem;
   letter-spacing: 0.1em;
   color: #2e2e2e;
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
   margin-top: 0;
@@ -348,7 +348,7 @@ h2 {
   font-size: 5.5rem;
   letter-spacing: 0.1em;
   color: #3ad45b;
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
   margin-top: 0;
@@ -364,7 +364,7 @@ h3 {
   font-size: 2rem;
   letter-spacing: 0.1em;
   color: #2e2e2e;
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
   margin-top: 0;
@@ -571,7 +571,7 @@ li {
   font-size: 5.5rem;
   letter-spacing: 0.1em;
   color: #3ad45b;
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
   margin-top: 0;
@@ -647,12 +647,44 @@ li {
 
 .skills {
   background: #e0e0e0;
+  padding: 3em 0 2em 0;
   text-align: center;
-  padding: 3em 0 4em 0;
 }
 
 .skills h2 {
   margin-bottom: 0.5em;
+}
+
+.my-skills {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 70em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1300px) {
+  .my-skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.skill {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  margin: 0 2.5em 2.5em;
 }
 
 .projects {
@@ -1014,7 +1046,7 @@ textarea {
   font-size: 1.5rem;
   letter-spacing: 0.1em;
   color: white;
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
   margin-top: 1.5em;
@@ -1027,7 +1059,7 @@ textarea {
 }
 
 .socials h2 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 .social-icons {
