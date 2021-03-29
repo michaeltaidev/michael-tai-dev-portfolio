@@ -22,7 +22,7 @@ form{
   @supports (display: grid) {
     @include mq {
       display: grid;
-      gap: 1em;
+      gap: 0.5em 1em;
       grid-template-areas: 
         "name     email"
         "message  message"

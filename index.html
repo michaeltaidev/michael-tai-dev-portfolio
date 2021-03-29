@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Michael Tai</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -45,15 +47,15 @@
 
   <section id="about" class="about">
     <div class="about-left">
-      <img src="img/about-03.png" alt="">
+      <img src="img/about.svg" alt="">
     </div>
     <div class="about-middle">
       <h3>A Little Bit About Me</h3>
-      <p>I'm a full-stack web developer/software engineer with a strong background in HTML, CSS, Javascript, React, and NodeJS. 
+      <p>I'm a full-stack web developer/software engineer with a strong background in HTML, CSS, Javascript, React, and NodeJS.
       I have over 2 years of experience in software development with a proven track record of developing successful, high-traffic websites and apps which you can view below.</p>
     </div>
     <div class="about-right">
-      <img src="img/about-02.png" alt="">
+      <img src="img/about-02.svg" alt="">
     </div>
   </section>
 
@@ -74,7 +76,7 @@
           <button class="modal-close" >
             <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
               <g transform="translate(-15 -15)">
-                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
                                  35.8,16.5 37,17.7 	" />
               </g>
             </svg>
@@ -86,7 +88,7 @@
             </div> <!-- /project-header -->
           </div>
           <div class="project-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
               explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro ad illo itaque hic! Ad reiciendis deleniti
               explicabo soluta deserunt perspiciatis sint! Nesciunt repellendus ex alias commodi dolorum quibusdam aspernatur!</p>
@@ -112,7 +114,7 @@
           <button class="modal-close">
             <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
               <g transform="translate(-15 -15)">
-                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3
                                          35.8,16.5 37,17.7 	" />
               </g>
             </svg>
@@ -214,11 +216,47 @@
   <section id="socials" class="socials">
     <h2>Socials</h2>
     <div class="social-icons">
-      <img class="social-icon" src="img/twitter.png" alt="twitter icon">
-      <img class="social-icon" src="img/github.png" alt="github icon">
-      <img class="social-icon" src="img/linkedin.png" alt="instagram icon">
+      <a href="https://github.com/michaeltaidev" target="_blank">
+        <img class="social-icon" src="img/github.png" alt="github icon">
+      </a>
+      <a href="https://www.linkedin.com/in/michaeltaidev/" target="_blank">
+        <img class="social-icon" src="img/linkedin.png" alt="instagram icon">
+      </a>
+      <a href="https://twitter.com/MichaelTaiDev" target="_blank">
+        <img class="social-icon" src="img/twitter.png" alt="twitter icon">
+      </a>
     </div>
-    <h3 class="tweets">Latest Tweets</h3>
+    <h3>Latest Tweets</h3>
+    <div class="tweets">
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
+            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
+          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+        </blockquote>
+      </div>
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
+            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
+          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+        </blockquote>
+      </div>
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
+            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
+          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+        </blockquote>
+      </div>
+      <div>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
+            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
+          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+        </blockquote>
+      </div>
+    </div>
   </section>
 
   <footer>
@@ -233,10 +271,14 @@
   <canvas id="hero-bg"></canvas>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/a6fdfc5739.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="js/nav.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/hero.js"></script>
+  <script src="js/tweets.js"></script>
 </body>
 </html>

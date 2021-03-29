@@ -595,6 +595,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   color: #f3f3f3;
+  overflow-x: hidden;
 }
 
 .about h3 {
@@ -988,7 +989,7 @@ form {
     form {
       display: -ms-grid;
       display: grid;
-      gap: 1em;
+      gap: 0.5em 1em;
           grid-template-areas: "name     email" "message  message" ".        button";
     }
     form .name {
@@ -1059,7 +1060,11 @@ textarea {
 }
 
 .socials h2 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0;
+}
+
+.socials h3 {
+  margin-bottom: 0.5em;
 }
 
 .social-icons {
@@ -1069,15 +1074,50 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 2em auto;
 }
 
 .social-icon {
-  width: 30%;
-  height: 30%;
+  padding: 0.5em;
+}
+
+.tweets {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 25em;
+}
+
+@media (min-width: 700px) {
+  .tweets {
+    max-width: 30em;
+  }
+}
+
+@media (min-width: 1050px) {
+  .tweets {
+    max-width: 30em;
+  }
+}
+
+.slick-next:before {
+  font-size: 30px;
+  color: #979797;
+}
+
+.slick-prev:before {
+  font-size: 30px;
+  color: #979797;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -35px;
 }
 
 footer {
