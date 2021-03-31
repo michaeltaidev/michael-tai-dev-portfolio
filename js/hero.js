@@ -7,7 +7,6 @@ let particlesArray;
 
 // Create particles
 class Particle {
-  // TODO: Destructure
   constructor(x, y, directionX, directionY, size, color) {
     this.x = x;
     this.y = y;

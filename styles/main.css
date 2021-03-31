@@ -990,7 +990,7 @@ form {
       display: -ms-grid;
       display: grid;
       gap: 0.5em 1em;
-          grid-template-areas: "name     email" "message  message" ".        button";
+          grid-template-areas: "name     email" "message  message" ".        captcha" ".        button";
     }
     form .name {
       -ms-grid-row: 1;
@@ -1011,8 +1011,13 @@ form {
     form .message textarea {
       height: 10em;
     }
-    form .submit-button {
+    form .captcha {
       -ms-grid-row: 3;
+      -ms-grid-column: 2;
+      grid-area: captcha;
+    }
+    form .submit-button {
+      -ms-grid-row: 4;
       -ms-grid-column: 2;
       grid-area: button;
     }
@@ -1100,6 +1105,25 @@ textarea {
   .tweets {
     max-width: 30em;
   }
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-track .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slick-next:before {

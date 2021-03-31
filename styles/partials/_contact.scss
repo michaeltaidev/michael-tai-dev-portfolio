@@ -26,6 +26,7 @@ form{
       grid-template-areas: 
         "name     email"
         "message  message"
+        ".        captcha"
         ".        button";
 
         .name {
@@ -41,6 +42,10 @@ form{
           textarea {
             height: 10em;
           }
+        }
+
+        .captcha {
+          grid-area: captcha;
         }
 
         .submit-button {

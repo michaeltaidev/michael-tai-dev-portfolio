@@ -199,16 +199,17 @@
     <p class="contact-info-email"><i class="fas fa-envelope"></i> &middot contact@michaeltai.dev</p>
     <p class="contact-info-phone"><i class="fas fa-phone"></i> &middot 1 (408) 786-4287</p>
     <h3 class="form-subtitle">Send a Message</h3>
-    <form action="">
+    <form action="POST" data-netlify="true">
       <label class="name">Name:
-        <input type="text" id="name" placeholder="John Doe">
+        <input type="text" name="name" id="name" placeholder="John Doe">
       </label>
       <label class="email">Email:
-        <input type="email" id="email" placeholder="email@example.com">
+        <input type="email" name="email" id="email" placeholder="email@example.com">
       </label>
       <label message="message" class="message">Message:
-        <textarea name="" id="message" placeholder="Enter your message..."></textarea>
+        <textarea name="message" id="message" placeholder="Enter your message..."></textarea>
       </label>
+      <div class="captcha" data-netlify-recaptcha="true"></div>
       <input class="submit-button" type="submit" value="SEND">
     </form>
   </section>
@@ -229,31 +230,37 @@
     <h3>Latest Tweets</h3>
     <div class="tweets">
       <div>
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
-            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
-          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+        <blockquote class="twitter-tweet" data-conversation="none">
+          <p lang="en" dir="ltr">As a new player, the match making has been amazing! Whatever 5Head algorithm you&#39;ve
+            implemented is definitely working. Still losing most of my games, but they&#39;re much more evenly matched and
+            I&#39;m having way more fun. You&#39;re awesome Fizzi, thanks for the update!</p>&mdash; Michael Tai
+          (@MichaelTaiDev) <a href="https://twitter.com/MichaelTaiDev/status/1351723533152358400?ref_src=twsrc%5Etfw">January
+            20, 2021</a>
         </blockquote>
       </div>
       <div>
         <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
-            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
-          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+          <p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/metagame?src=hash&amp;ref_src=twsrc%5Etfw">#metagame</a>
+            was damned good, excellent job and well done <a href="https://twitter.com/_samox_?ref_src=twsrc%5Etfw">@_samox_</a>
+            don&#39;t listen to the haters.</p>&mdash; Michael Tai (@MichaelTaiDev) <a
+            href="https://twitter.com/MichaelTaiDev/status/1338298896401895426?ref_src=twsrc%5Etfw">December 14, 2020</a>
         </blockquote>
       </div>
       <div>
         <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
-            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
-          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+          <p lang="en" dir="ltr"><a href="https://twitter.com/geoffkeighley?ref_src=twsrc%5Etfw">@geoffkeighley</a> just lead me
+            on harder then my middle school crush. <a
+              href="https://twitter.com/hashtag/TheGameAwards?src=hash&amp;ref_src=twsrc%5Etfw">#TheGameAwards</a> <a
+              href="https://twitter.com/hashtag/EldenRing?src=hash&amp;ref_src=twsrc%5Etfw">#EldenRing</a></p>&mdash; Michael
+          Tai (@MichaelTaiDev) <a
+            href="https://twitter.com/MichaelTaiDev/status/1337265661156868098?ref_src=twsrc%5Etfw">December 11, 2020</a>
         </blockquote>
       </div>
       <div>
         <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">I’m going give someone random who retweets this tweet $10,000 because it’s my birthday and I
-            feel like being nice ☺️ (you have to be following me so I can dm you the code if you win)</p>&mdash; MrBeast
-          (@MrBeast) <a href="https://twitter.com/MrBeast/status/1125779736872067072?ref_src=twsrc%5Etfw">May 7, 2019</a>
+          <p lang="en" dir="ltr">If you aren’t using Twitter on your phone while laying in bed in a sideways position before
+            drifting off to sleep your doin it wrong</p>&mdash; Michael Tai (@MichaelTaiDev) <a
+            href="https://twitter.com/MichaelTaiDev/status/1335101980591620097?ref_src=twsrc%5Etfw">December 5, 2020</a>
         </blockquote>
       </div>
     </div>
