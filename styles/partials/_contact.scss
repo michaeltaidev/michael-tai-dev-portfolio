@@ -76,8 +76,13 @@ textarea {
   display: block;
   width: auto;
   margin-left: auto;
+  margin-top: 0;
   background: $green;
   border: none;
   padding: .5em 1.5em;
   @include headings($fs: 1.5rem, $color: white, $mt: 1.5em);
+}
+
+.captcha {
+  margin-left: auto;
 }
