@@ -1046,7 +1046,6 @@ textarea {
   display: block;
   width: auto;
   margin-left: auto;
-  margin-top: 0;
   background: #3ad45b;
   border: none;
   padding: .5em 1.5em;
@@ -1056,7 +1055,7 @@ textarea {
   text-transform: none;
   line-height: 1.2;
   font-family: "Oswald", serif;
-  margin-top: 1.5em;
+  margin-top: 0;
 }
 
 .captcha {
