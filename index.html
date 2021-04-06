@@ -201,15 +201,14 @@
     <h3 class="form-subtitle">Send a Message</h3>
     <form action="POST" data-netlify="true">
       <label class="name">Name:
-        <input type="text" name="name" id="name" placeholder="John Doe">
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
       </label>
       <label class="email">Email:
-        <input type="email" name="email" id="email" placeholder="email@example.com">
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
       </label>
       <label message="message" class="message">Message:
-        <textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+        <textarea name="message" id="message" placeholder="Enter your message..." required></textarea>
       </label>
-      <div class="captcha" data-netlify-recaptcha="true"></div>
       <input class="submit-button" type="submit" value="SEND">
     </form>
   </section>
