@@ -3,7 +3,7 @@ const projectContainer = document.querySelector('.project-items')
 projectContainer.addEventListener('click', e => {
 
   // Ignores href link
-  e.preventDefault()
+  // e.preventDefault()
 
   // Only get the modal info if the "More Info" button is clicked
   const modalToggle = e.target.closest('.project-info')

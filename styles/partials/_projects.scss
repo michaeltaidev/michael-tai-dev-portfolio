@@ -1,6 +1,7 @@
 // Projects Home Page
 
 .projects {
+  background: $white;
   text-align: center;
   padding: 3em 0 5em 0;
 
@@ -9,9 +10,12 @@
   }
 }
 
+
+
 .project-items {
   // Fallback for browsers that are incompatible with CSS Grid
   display: flex;
+  gap: 0.25em;
   flex-wrap: wrap;
   @include container($max-width: 75em);
 }
@@ -171,16 +175,28 @@
   background-position: center;
 }
 
-.header-one {
-  background-image: url(../img/portfolio-01.jpg);
+.header-1 {
+  background-image: url(../img/portfolio/teamer03.jpg);
 }
 
-.header-two {
-  background-image: url(../img/portfolio-02.jpg);
+.header-2 {
+  background-image: url(../img/portfolio/valorantforums04.jpg);
+}
+
+.header-3 {
+  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
+}
+
+.header-4 {
+  background-image: url(../img/portfolio/cyclingclub01.png);
+}
+
+.header-5 {
+  background-image: url(../img/portfolio/chronicbit03.jpg);
 }
 
 .project-title-box {
-  background: rgba($green, .75);
+  background: rgba($green, .85);
   padding: 3em;
   color: $white;
   width: 70%;
@@ -212,6 +228,11 @@
 
   img {
     padding-top: 2em;
+  }
+
+  .portrait {
+    width: auto;
+    margin: 0 auto;
   }
 }
 

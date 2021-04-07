@@ -1,5 +1,5 @@
 .contact {
-  @include container;
+  background: $white;
   padding: 3em 0 4em 0;
   text-align: center;
 
@@ -15,6 +15,7 @@
 }
 
 form{
+    @include container;
   display: flex;
   flex-direction: column;
   text-align: left;

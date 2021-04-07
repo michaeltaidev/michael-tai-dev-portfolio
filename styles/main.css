@@ -689,6 +689,7 @@ li {
 }
 
 .projects {
+  background: #f3f3f3;
   text-align: center;
   padding: 3em 0 5em 0;
 }
@@ -701,6 +702,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 0.25em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 90%;
@@ -875,16 +877,28 @@ li {
   background-position: center;
 }
 
-.header-one {
-  background-image: url(../img/portfolio-01.jpg);
+.header-1 {
+  background-image: url(../img/portfolio/teamer03.jpg);
 }
 
-.header-two {
-  background-image: url(../img/portfolio-02.jpg);
+.header-2 {
+  background-image: url(../img/portfolio/valorantforums04.jpg);
+}
+
+.header-3 {
+  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
+}
+
+.header-4 {
+  background-image: url(../img/portfolio/cyclingclub01.png);
+}
+
+.header-5 {
+  background-image: url(../img/portfolio/chronicbit03.jpg);
 }
 
 .project-title-box {
-  background: rgba(58, 212, 91, 0.75);
+  background: rgba(58, 212, 91, 0.85);
   padding: 3em;
   color: #f3f3f3;
   width: 70%;
@@ -917,6 +931,11 @@ li {
 
 .project-content img {
   padding-top: 2em;
+}
+
+.project-content .portrait {
+  width: auto;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes modalFadeIn {
@@ -956,9 +975,7 @@ li {
 }
 
 .contact {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 50em;
+  background: #f3f3f3;
   padding: 3em 0 4em 0;
   text-align: center;
 }
@@ -974,6 +991,9 @@ li {
 }
 
 form {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
