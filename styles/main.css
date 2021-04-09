@@ -731,7 +731,7 @@ li {
   left: 0;
   right: 0;
   padding: 2em;
-  background: rgba(58, 212, 91, 0.7);
+  background: rgba(58, 212, 91, 0.85);
   color: #f3f3f3;
   text-align: left;
   display: -webkit-box;
@@ -843,8 +843,8 @@ li {
   left: 2em;
   right: 2em;
   background: #f3f3f3;
-  -webkit-box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.75);
-          box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.85);
+          box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.85);
   overflow-y: scroll;
   overflow-x: hidden;
   display: none;
@@ -878,15 +878,15 @@ li {
 }
 
 .header-1 {
-  background-image: url(../img/portfolio/teamer03.jpg);
-}
-
-.header-2 {
   background-image: url(../img/portfolio/valorantforums04.jpg);
 }
 
+.header-2 {
+  background-image: url(../img/portfolio/chronicbit03.jpg);
+}
+
 .header-3 {
-  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
+  background-image: url(../img/portfolio/teamer03.jpg);
 }
 
 .header-4 {
@@ -894,7 +894,7 @@ li {
 }
 
 .header-5 {
-  background-image: url(../img/portfolio/chronicbit03.jpg);
+  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
 }
 
 .project-title-box {

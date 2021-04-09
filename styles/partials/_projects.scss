@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     padding: 2em;
-    background: rgba($green, .7);
+    background: rgba($green, .85);
     color: $white;
     text-align: left;
     display: flex;
@@ -143,7 +143,7 @@
   left: 2em;
   right: 2em;
   background: $white;
-  box-shadow: 0 0 0 3em rgba(black, .75);
+  box-shadow: 0 0 0 3em rgba(black, .85);
   overflow-y: scroll;
   overflow-x: hidden;
   display: none;
@@ -176,15 +176,15 @@
 }
 
 .header-1 {
-  background-image: url(../img/portfolio/teamer03.jpg);
-}
-
-.header-2 {
   background-image: url(../img/portfolio/valorantforums04.jpg);
 }
 
+.header-2 {
+  background-image: url(../img/portfolio/chronicbit03.jpg);
+}
+
 .header-3 {
-  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
+  background-image: url(../img/portfolio/teamer03.jpg);
 }
 
 .header-4 {
@@ -192,7 +192,7 @@
 }
 
 .header-5 {
-  background-image: url(../img/portfolio/chronicbit03.jpg);
+  background-image: url(../img/portfolio/michaeltaiportfolio02.jpg);
 }
 
 .project-title-box {
