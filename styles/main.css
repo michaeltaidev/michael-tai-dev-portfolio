@@ -1169,6 +1169,9 @@ textarea {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background: #4e554f;
   padding: .5em;
   color: #f3f3f3;
