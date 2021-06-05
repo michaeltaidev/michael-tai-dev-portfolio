@@ -5,6 +5,14 @@
 body {
   width:100vw;
   overflow-x:hidden;
+  color: $dark-gray;
+  font-family: $ff-ro;
+  line-height: 1.6;
+  background: $white;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
 }
 
 body::-webkit-scrollbar {
@@ -17,17 +25,6 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
-}
-
-body {
-  color: $dark-gray;
-  font-family: $ff-ro;
-  line-height: 1.6;
-  background: $white;
-
-  @include mq {
-    font-size: 1.125rem;
-  }
 }
 
 h1 {

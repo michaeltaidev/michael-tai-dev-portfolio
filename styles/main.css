@@ -306,6 +306,16 @@ template {
 body {
   width: 100vw;
   overflow-x: hidden;
+  color: #2e2e2e;
+  font-family: "Roboto", serif;
+  line-height: 1.6;
+  background: #f3f3f3;
+}
+
+@media (min-width: 50em) {
+  body {
+    font-size: 1.125rem;
+  }
 }
 
 body::-webkit-scrollbar {
@@ -319,19 +329,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
-}
-
-body {
-  color: #2e2e2e;
-  font-family: "Roboto", serif;
-  line-height: 1.6;
-  background: #f3f3f3;
-}
-
-@media (min-width: 50em) {
-  body {
-    font-size: 1.125rem;
-  }
 }
 
 h1 {
@@ -1107,6 +1104,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2em auto;
+  margin-bottom: 0;
 }
 
 .social-icon {
@@ -1170,8 +1168,12 @@ textarea {
 
 footer {
   position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
   bottom: 0;
-  left: 0;
+  height: 40px;
   width: 100%;
   background: #4e554f;
   padding: .5em;
@@ -1181,5 +1183,9 @@ footer {
 
 footer .copyright {
   margin: 0;
+}
+
+footer .footer-div {
+  margin-top: auto;
 }
 /*# sourceMappingURL=main.css.map */
